@@ -23,7 +23,7 @@ rows = cur.fetchall()
 savedfile = []
 for r in rows:
     savedfile.append(r[0])
-print(f"savedfile {savedfile}")
+# print(f"savedfile {savedfile}")
 
 
 def convNumber(x):
@@ -90,7 +90,12 @@ def initLoadLastfile():
     a = len(files)
     f = files[int(a-1)]
     # print(f)
-    loadCSV(f)
+    if(f not in savedfile):
+        loadCSV(f)
+        print(f)
+    else:
+        print("already file")
+        print(f)
 
 
 def initLoad():
@@ -103,4 +108,4 @@ def initLoad():
             print(f)
 
 
-initLoad()
+initLoadLastfile()
