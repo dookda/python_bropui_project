@@ -109,3 +109,4 @@ def initLoad():
 
 
 initLoadLastfile()
+ftp.quit()
