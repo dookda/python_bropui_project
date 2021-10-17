@@ -3,7 +3,7 @@ import os
 import ftplib
 from xml.dom import minidom
 
-conn = pg2.connect(user="postgres", password="Pgis@rti2dss@2020",
+conn = pg2.connect(user="postgres", password="",
                    host="119.59.125.134", database="envidb")
 cur = conn.cursor()
 
