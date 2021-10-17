@@ -6,7 +6,7 @@ import csv
 import psycopg2 as pg2
 import re
 
-conn = pg2.connect(user="postgres", password="Pgis@rti2dss@2020",
+conn = pg2.connect(user="postgres", password="Pgis@xx@2020",
                    host="119.59.125.134", database="envidb")
 cur = conn.cursor()
 
